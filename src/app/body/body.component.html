@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-md-3 m-3 p-1" style="width: 18rem;" *ngFor="let item of list.products">
+            <img class="card-img-top" src="{{item.images[0]}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <h5>Price: ${{item.price}}</h5>
+            </div>
+          </div>
+    </div>
+</div>
+
+
